@@ -1,0 +1,83 @@
+.title {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	background: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.title2 {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	background: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	top: 0;
+	left: 0;
+
+
+}
+
+.plain {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.highlight {
+	font-size: 30px;
+	color: blue;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.background {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: linear-gradient(to bottom right, red, yellow);
+	overflow-y: auto;
+	max-height: 80vh;
+}
+
+.background2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: linear-gradient(to bottom right, red, yellow);
+
+}
+
+.player {
+	margin: 0 auto;
+	width: 300px;
+	justify-content: center;
+}
+
+.buttoncenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.note {
+	background-color: darkgray;
+}
+
+.note2 {
+	background-color: darkgray;
+
+}
+
+.target {
+	scroll-margin-top: 150px;
+}
+
+#recordedAudio {
+	left: 100px;
+	right: 100px;
+	position: relative;
+}

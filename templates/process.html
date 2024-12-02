@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>process page</title>
+    </head>
+    <script
+    type="text/javascript"
+    src="{{ url_for('static',filename='karaoke.js') }}"
+  ></script>
+    <body>
+        <form action="http://localhost:9094/acknowledge" method="get" id="ytProcess">
+            Youtube Link:<br>
+            <input type="text" name="ytlink" id="ytlink"><br>
+            <input type="submit" onClick="ProcessYT()" value="Submit">
+        </form>
+    </body>
+
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <title>Karaoke</title>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static',filename='karaoke.js') }}"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/karaoke.css') }}"
+    />
+  </head>
+  <body onload="karaoke()">
+    <a href='process'>PROCESS</a>
+    <table style="width:100%">
+      <tr>
+        <th>
+          <div class="title2">Song List</div>
+        </th>
+        <th>
+          <div class="title">Karaoke</div>
+        </th>
+      </tr>
+      <tr>
+        <td style="vertical-align:top;">
+          <div class="note2">Choose your song!</div>
+          <div class="background" id="Mysongs">
+            <!-- Add all songs here-->
+          </div>
+        </td>
+        <td>
+          <div class="note">Karaoke ni Jumi :></div>
+          <div class="background" id="lyrics">
+            <div class="player">
+              <!--<p type="text" name="mysong" id="mysong"> -->
+              <script>
+                link = getAllUrlParams(document.URL).song;
+                mysrc = link
+                //document.getElementById("mysong").textContent = mysrc
+              </script>
+              <!--</p> -->
+              <!--
+        <audio id="player" controls preload="auto" onplay="start();"> <source src="{{ url_for('static',filename='assets/music/sample.mp3') }}" type="audio/mpeg"/> </audio>
+      -->
+              <audio id="player" controls="controls"></audio>
+              <div class="buttoncenter">
+                <button onclick="start(getAllUrlParams(document.URL).song)">Sing this!</button>
+              </div>
+            </div>
+          </div>
+          <div class="title">
+            Here's your recorded audio!
+            <audio id="recordedAudio"></audio>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
