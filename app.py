@@ -40,4 +40,4 @@ def acknowledge():
 	return render_template("acknowledge.html")
 
 if __name__ == "__main__":
-	app.run(debug=True, port =9094)
+	app.run()
