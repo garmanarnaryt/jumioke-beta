@@ -220,11 +220,11 @@ function loadSong(){
 
 function ProcessYT() {
   var linkvalue = document.getElementById('ytlink').value;
-  window.location.href = 'http://localhost:9094/ytprocess?link=' + linkvalue;
+  window.location.href = 'https://jumioke-beta.onrender.com/ytprocess?link=' + linkvalue;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      window.location.href = 'http://localhost:9094/acknowledge';
+      window.location.href = 'https://jumioke-beta.onrender.com/acknowledge';
     }
   };
   xhttp.open("POST", "acknowledge.html", true);

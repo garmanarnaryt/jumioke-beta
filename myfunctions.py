@@ -252,6 +252,7 @@ def ytprocess(URLS):
     ydl_opts = {
         'format': 'm4a/bestaudio/best',
         'outtmpl': 'Downloaded/%(id)s',
+        "cookiefile": "cookie.txt"
         # ℹ️ See help(yt_dlp.postprocessor) for a list of available Postprocessors and their arguments
         'postprocessors': [{  # Extract audio using ffmpeg
             'key': 'FFmpegExtractAudio',
